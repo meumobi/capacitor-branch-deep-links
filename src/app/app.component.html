@@ -3,6 +3,9 @@
   <input type="text" [value]="shortUrl()" placeholder="Branch Short URL" />
   <button class="primary" type="button" (click)="copyShortUrlToClipboard()">Copy link</button><br/>
 </section>
+<section>
+  <app-qrcode [url]="shortUrl()"></app-qrcode>
+</section>
 
 <router-outlet />
 

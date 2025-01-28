@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { DeepLinkServiceProvider, DeepLinkService } from './core/deep-link';
+import { QrcodeComponent } from "./qrcode/qrcode.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule],
+  imports: [RouterOutlet, FormsModule, QrcodeComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   providers: [DeepLinkServiceProvider],
